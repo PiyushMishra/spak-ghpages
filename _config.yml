@@ -5,8 +5,8 @@ title: Spark-pages
 email: piyush.mishra@imaginea.com
 description: > # this means to ignore newlines until "baseurl:"
   It a blog about spark internals.
-baseurl: "/spark-pages" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/spark-ghpages" # the subpath of your site, e.g. /blog/
+url: "http://imaginea.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
