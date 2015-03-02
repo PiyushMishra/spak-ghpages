@@ -19,5 +19,5 @@ which exposes methods getBlockData and putBlockData to play with data locally.
 It contains a BlockManagerSlaveActor which takes command from BlockManagerMaster to do operations like getting block Status, removing blocks, removing rdd, removing broadcast to/from slave nodes.
 
 Below is the high level diagram of BlockManager.
+![_config.yml]({{ site.baseurl }}/images/BlockManager.jpeg)
 
-![Block Manager not found]({{site.url}}assets/BlockManager.jpeg)
