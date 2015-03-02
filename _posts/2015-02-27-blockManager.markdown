@@ -20,4 +20,4 @@ It contains a BlockManagerSlaveActor which takes command from BlockManagerMaster
 
 Below is the high level diagram of BlockManager.
 
-                      ![](https://github.com/PiyushMishra/spark-ghpages/blob/gh-pages/assets/BlockManager.jpeg)
+![Block Manager not found]({{site.url}}assets/BlockManager.jpeg)
