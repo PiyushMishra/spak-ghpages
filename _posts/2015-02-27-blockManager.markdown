@@ -20,4 +20,4 @@ It contains a BlockManagerSlaveActor which takes command from BlockManagerMaster
 
 Below is the high level diagram of BlockManager.
 
-                         ![BlockManager]({{site.url}}/assets/BlockManager.jpeg)
+                      ![](https://github.com/PiyushMishra/spark-ghpages/blob/gh-pages/assets/BlockManager.jpeg)
