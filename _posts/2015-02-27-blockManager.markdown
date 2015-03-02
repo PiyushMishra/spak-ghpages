@@ -11,7 +11,7 @@ In Spark BlockManager run on every node(driver or executers) which provides inte
 
 Note that #initialize() must be called before the BlockManager is usable.
 
-Blockmangers communicate with other Blockmanagers running on different nodes for sending and retriving data
+Blockmangers communicate with other Blockmanagers running on different nodes for sending and retriving data.
 
 Blockmanager contains shufflemanagers, security managers and blocktransferService as its components. It extends the interface BlockDataManager
 which exposes methods getBlockData and putBlockData to play with data locally.
