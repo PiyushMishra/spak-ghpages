@@ -55,8 +55,11 @@ markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 
+#baseurl 
+baseurl : /spark-pages
+
 #url for site
-url : http://spark-pages.com/
+url : https://spark-pages.com/spark-pages
 
 # The release of Jekyll Now that you're using
 version: v1.1.0
