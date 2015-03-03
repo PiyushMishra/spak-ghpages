@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Spark Env(Class which holds runtime objects)"
+date:   2015-03-03 05:33:27 	
+categories: Understanding Spark Execution Environment
+---
+
+A SparkEnv class holds various runtime objects for running a spark instance(either master or worker) on a machine.It includes akka actorsystem, blockmanager, serializer, mapoutputTracker. SparkEnv is a Global object which can be accessed by all the thread running into spark system.
+
+After creating a SparkContext it can be easily accessed as SparkEnv.get.
+
+<center>![SparkEnv image not found]({{ site.baseurl }}/images/SparkEnv.jpeg)</center>
+
+SparkEnv manages python workers accros nodes to fork worker processes because it is exepensive to fork processes from java.
+
+1- ExecuterId: The id of the process running on clusteri which is doing computations and storing data for our application.
+
+2- ActorSystem: Akka ActorSystem in which BlockmManager MasterActor and driver actor reside.
+
+3- Serializer : for sending data to/from across nodes in serialized form.
+
+4- closureSerializer : sending serealizer closure code across nodes for computations.
+
+5- CacheManager : Spark class responsible for passing RDDs partition contents to the BlockManager and making sure a node doesn't load two copies of an RDD at once.
+
+6- MapOutputTracker:  Class that keeps track of the location of the map output of a stage. This is abstract because different versions of MapOutputTracker (driver and executor) use different HashMap to store its metadata.
+
