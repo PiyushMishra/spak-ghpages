@@ -19,3 +19,5 @@ which exposes methods getBlockData and putBlockData to play with data locally.
 It has BlockManagerSlaveActor which takes command from BlockManagerMaster to do operations like getting block Status, removing blocks, removing rdd, removing broadcast to/from slave nodes. Below is the high level diagram of BlockManager.
 
 <center>![_config.yml]({{ site.baseurl }}/images/BlockManager.jpeg)</center>
+
+Block Manager offers a pluggable shuffle client architechure so that we can plugin a external shuffle client otherwise use blocktransferservicewhich uses Netty internally to fetch a set of blocks at at time..  
