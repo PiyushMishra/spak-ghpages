@@ -4,7 +4,7 @@ title: "BlockTransferService"
 categories: Understanding blockTransferService
 ---
 
-BlockTransferService is absract class which extends abstract class ShuffleClient. It provides a interface which exposes methods for fetching and putting data blocks locally.
+BlockTransferService is absract class which extends abstract class ShuffleClient. It provides a interface which exposes methods for fetching and putting data blocks across nodes.
 Below is the UML diagram of the interface.
 
 ![BlockTransferservice image not found]({{ site.baseurl }}/images/BlockTransferService.jpeg)
